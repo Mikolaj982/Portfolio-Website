@@ -73,7 +73,7 @@ export const EmailSection = () => {
         {Error ? <ErrorHandler message={ErrorMsg.message} success={ErrorMsg.success} isOpen={isOpen} setIsOpen={setIsOpen} /> : ''}
         <section className='flex flex-col mt-10 px-5 mb-16 lg:px-20 sm:flex-row' id='contacts'>
             <div className='sm:w-[50%] sm:mr-2'>
-                <h3 className='text-3xl font-bold text-white mb-3'>Let's Connect</h3>
+                <h3 className='text-3xl font-bold text-white mb-3'>Let&apos;s Connect</h3>
                 <div className='text-white'>
                     <div className='flex'>Email:  <p className='font-bold px-1'> mikolaj982.hi@gmail.com</p></div>
                     <div className='flex'>Phone number: <p className='font-bold px-1'>608852733</p></div>

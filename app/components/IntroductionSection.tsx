@@ -28,7 +28,7 @@ const IntroductionSection = () => {
             <div className='flex flex-col items-center sm:flex sm:flex-row sm:justify-between'>
                 <div>
                     <h1 className='mb-4 text-6xl font-extrabold bg-main-gradient text-transparent bg-clip-text'>
-                        Hi, I'm
+                        Hi, I&apos;m
                     </h1>
                     <TypeAnimation
                         sequence={[
