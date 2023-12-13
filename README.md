@@ -1,3 +1,44 @@
+🇬🇧
+# Portfolio Website
+
+Welcome to my portfolio website! This project is built using Next.js, TypeScript, and TailwindCSS. It serves not only as a showcase of my skills but also as an interactive CV.
+
+## Features
+
+- **Dynamic CV:** Clear presentation of my professional experience, skills, and completed projects.
+- **Responsive Design:** Adapts to various devices, ensuring a comfortable browsing experience regardless of the used device.
+- **Mail Section:** Enables direct email communication, facilitating easy contact.
+
+## Demo
+
+Explore the project in action: https://famous-kringle-268a47.netlify.app.
+
+This project is flexible and easy to customize. Feel free to explore the source code, adjust content to your needs, and share your suggestions.
+
+Thank you for visiting my portfolio!
+
+----------------------------------------------------------------------------------------------------
+
+🇵🇱
+# Portfolio Website
+
+Witaj w moim portfolio website! Projekt ten został stworzony przy użyciu Next.js, TypeScript oraz TailwindCSS. Stanowi on nie tylko prezentację moich umiejętności, ale także funkcjonuje jako interaktywne CV.
+
+## Funkcje
+
+- **Dynamiczne CV:** Przejrzyste przedstawienie mojego doświadczenia zawodowego, umiejętności oraz zrealizowanych projektów.
+- **Responsywny Design:** Dostosowuje się do różnych urządzeń, gwarantując komfortowe przeglądanie niezależnie od używanego sprzętu.
+- **Sekcja Mailowa:** Umożliwia bezpośrednie wysyłanie wiadomości e-mail, ułatwiając nawiązywanie kontaktu.
+
+## Demo
+
+Zapoznaj się z działaniem projektu: https://famous-kringle-268a47.netlify.app.
+
+Projekt ten jest elastyczny i łatwy do dostosowania pod swoje potrzeby. Zachęcam do eksploracji kodu źródłowego, dostosowywania treści i dzielenia się swoimi sugestiami.
+
+Dziękuję za odwiedzenie mojego portfolio!
+
+----------------------------------------------------------------------------------------------------
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
