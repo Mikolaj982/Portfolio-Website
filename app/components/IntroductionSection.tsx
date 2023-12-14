@@ -47,7 +47,7 @@ const IntroductionSection = () => {
                         I have practical experience in creating responsive interfaces using technologies such as HTML, CSS and JavaScript.
                     </p>
                     <div className='flex flex-col mb-4 sm:flex-row lg:w-[400px]'>
-                        <button className='py-3 px-6 sm:px-5 w-fill rounded-full mb-2 sm:mb-0 self-center bg-main-gradient hover:bg-gradient-to-tl from-white via-indigo-300 to-indigo-700'><Link href='/'>Hire me</Link></button>
+                        <button className='py-3 px-6 sm:px-5 w-fill rounded-full mb-2 sm:mb-0 self-center bg-main-gradient hover:bg-gradient-to-tl from-white via-indigo-300 to-indigo-700'><Link href='https://www.linkedin.com/in/miko%C5%82aj-kosmala-bb6b4a249/'>Hire me</Link></button>
                         <button onClick={handleDownload} className='py-3 px-6 w-fill text-white rounded-full border-2 sm:ml-1 hover:bg-indigo-300 hover:text-black'>Download CV</button>
                     </div>
                 </div>
