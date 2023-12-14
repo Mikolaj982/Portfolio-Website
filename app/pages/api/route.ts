@@ -51,7 +51,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
                 );
             } else {
                 return new NextResponse(
-                    JSON.stringify({ success: true, message: 'Message successfully sent.' }),
+                    JSON.stringify({ success: true, message: 'Message successfully sent' }),
                     { status: 200, headers: { 'content-type': 'application/json' } },
                 );
             }
@@ -62,11 +62,9 @@ export async function POST(req: NextRequest, res: NextResponse) {
             { status: 403, headers: { 'content-type': 'application/json' } },
         );
     }
-    // res.status(200).send({
-    //     message: 'Wiadomość dostarczona pomyślnie',
-    // })
+   
     return new NextResponse(
-        JSON.stringify({ success: true, message: 'authentication succesful' }),
+        JSON.stringify({ success: true, message: 'Message successfully sent' }),
         { status: 200, headers: { 'content-type': 'application/json' } },
     );
 };
