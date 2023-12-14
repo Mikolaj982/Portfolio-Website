@@ -79,10 +79,10 @@ export const EmailSection = () => {
                     <div className='flex'>Phone number: <p className='font-bold px-1'>608852733</p></div>
                 </div>
                 <div className='flex mt-6'>
-                    <Link href='/'>
+                    <Link href='https://github.com/Mikolaj982'>
                         <Image src={githubIcon} alt='github icon' width={50} height={50} />
                     </Link>
-                    <Link href='/' className='ml-4 bg-white rounded-[6px]'>
+                    <Link href='https://www.linkedin.com/in/miko%C5%82aj-kosmala-bb6b4a249/' className='ml-4 bg-white rounded-[6px]'>
                         <Image src={linkedin} alt='linkedin icon' width={50} height={50} />
                     </Link>
                 </div>
