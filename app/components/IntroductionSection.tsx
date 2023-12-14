@@ -15,7 +15,7 @@ const IntroductionSection = () => {
             const url = window.URL.createObjectURL(fileBlob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'example.pdf';
+            a.download = 'Kosmala_Mikołaj_CV.pdf';
             a.click();
             window.URL.revokeObjectURL(url);
         } catch (error) {
