@@ -6,14 +6,22 @@ import { motion } from "framer-motion"
 const projectsData = [
     {
         id: 1,
-        title: 'Portfolio Website',
-        description: 'One page website, made by using next.js, typescript, tailwind.',
-        image: '/images/PortfolioWebsite.PNG',
-        github: '',
-        websiteLink: ''
+        title: 'Starmont Website',
+        description: 'Website with integrated Swiper library for handling dynamic sliders and Google Maps to facilitate the location of the business.',
+        image: '/images/StarmontPreview.PNG',
+        github: 'https://github.com/Mikolaj982/Starmont-website',
+        websiteLink: 'https://strong-sunshine-40ad89.netlify.app/'
     },
     {
         id: 2,
+        title: 'Portfolio Website',
+        description: 'One page website, made by using next.js, typescript, tailwind.',
+        image: '/images/PortfolioWebsite.PNG',
+        github: 'https://github.com/Mikolaj982/Portfolio-Website',
+        websiteLink: 'https://famous-kringle-268a47.netlify.app'
+    },
+    {
+        id: 3,
         title: 'Movies App',
         description: 'Crud application with register and login. Made by using react, typescript, express, scss, html',
         image: '/images/MoviesApp.PNG',
@@ -21,7 +29,7 @@ const projectsData = [
         websiteLink: 'https://coruscating-dusk-0c8d64.netlify.app'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Wordle',
         description: 'App inspirated by popular game, named "wordle". Made by using react, typescript, scss, html',
         image: '/images/WordleApp.PNG',
@@ -29,7 +37,7 @@ const projectsData = [
         websiteLink: 'https://transcendent-cuchufli-744b09.netlify.app'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Budged App',
         description: 'Simple app for calculating expenses and incomes. Made by using javascript, css, html',
         image: '/images/BudgetAppImg.PNG',
@@ -37,7 +45,7 @@ const projectsData = [
         websiteLink: 'https://cheery-lolly-268b2b.netlify.app'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Todo List App',
         description: 'Simple todo application. Made by using javascript, css, html',
         image: '/images/TodoApp.PNG',
@@ -45,7 +53,7 @@ const projectsData = [
         websiteLink: 'https://profound-pothos-edb9c6.netlify.app'
     },
     {
-        id: 6,
+        id: 7,
         title: 'Landing Page',
         description: 'Simple example of one page website. Made by using react, typescript, css, html',
         image: '/images/LandingPage.PNG',
