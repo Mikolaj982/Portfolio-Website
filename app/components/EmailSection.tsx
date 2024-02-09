@@ -16,7 +16,7 @@ export const EmailSection = () => {
     const [isOpen, setIsOpen] = useState<boolean>(true);
     const [Error, setError] = useState<boolean>(false);
     const [ErrorMsg, setErrorMsg] = useState<ErrorMsgProps>({
-        message: 'Błąd',
+        message: '',
         success: false,
     });
 
@@ -53,6 +53,7 @@ export const EmailSection = () => {
                     success: resData.success,
                 });
                 setError(true);
+                setIsOpen(true);
             }
             setErrorMsg({
                 message: resData.message,
@@ -61,10 +62,12 @@ export const EmailSection = () => {
             setError(true);
             setIsOpen(true);
         } catch (e) {
+            console.error(e)
             setErrorMsg({
-                message: `${e}`,
+                message: `Failed to send email`,
                 success: false,
             });
+            setIsOpen(true);
             setError(true);
         }
     }
@@ -76,7 +79,7 @@ export const EmailSection = () => {
                 <h3 className='text-3xl font-bold text-white mb-3'>Let&apos;s Connect</h3>
                 <div className='text-white'>
                     <div className='flex'>Email:  <p className='font-bold px-1'> mikolaj982.hi@gmail.com</p></div>
-                    <div className='flex'>Phone number: <p className='font-bold px-1'>608852733</p></div>
+                    <div className='flex'>Phone number: <p className='font-bold px-1'>608-852-733</p></div>
                 </div>
                 <div className='flex mt-6'>
                     <Link href='https://github.com/Mikolaj982'>

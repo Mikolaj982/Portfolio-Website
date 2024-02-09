@@ -26,7 +26,7 @@ export const Navbar = () => {
             <div className='md:hidden h-0'>
                 <button>
                     {isOverlay ?
-                        <XCircleIcon onClick={() => setOverlay(false)} className='h-[35px] text-gray-300 absolute top-[30px] right-[30px] z-20' />
+                        <XCircleIcon onClick={() => setOverlay(false)} className='h-[35px] text-gray-300 fixed top-[30px] right-[30px] z-20' />
                         :
                         <Bars3Icon onClick={() => setOverlay(true)} className='h-[35px] text-gray-300 absolute top-[30px] right-[30px]' />
                     }

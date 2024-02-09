@@ -9,7 +9,7 @@ interface ErrorHandlerProps {
 
 const ErrorHandler: React.FC<ErrorHandlerProps> = ({ message, success, isOpen, setIsOpen }) => {
     const successStyles = 'bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2';
-    const failedStyles = 'bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded absolute';
+    const failedStyles = 'bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2';
     return <>
         {isOpen ?
             <div className={success ? successStyles : failedStyles} role="alert">

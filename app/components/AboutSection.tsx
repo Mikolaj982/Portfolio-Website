@@ -3,44 +3,42 @@ import React, { useState, useTransition } from 'react';
 import Image from 'next/image';
 import codeImg from '../../public/images/code.jpg'
 import { TabButton } from './TabButton';
+import 'animate.css';
 
 const TAB_DATA = [
     {
         title: 'Skills',
         id: 'skills',
-        content: (
-            <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Css: Scss</li>
-                <li>Tailwind</li>
-                <li>Html</li>
-                <li>Git</li>
-            </ul>
+        content: (<>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Css: Scss</li>
+            <li>Tailwind</li>
+            <li>Html</li>
+            <li>Git</li>
+        </>
         )
     },
     {
         title: 'Education',
         id: 'education',
         content: (
-            <ul>
-                <li>
-                    BA in Physical Education In Uniformed
-                    Services - Academy Of Physical Education In
-                    Cracow
-                </li>
-            </ul>
+            <li>
+                BA in Physical Education In Uniformed
+                Services - Academy Of Physical Education In
+                Cracow
+            </li>
         )
     },
     {
         title: 'Certifications',
         id: 'certifications',
         content: (
-            <ul>
+            <>
                 <li>JavaScript & React - Future Collars</li>
                 <li>Html & Css - Future Collars</li>
-            </ul>
+            </>
         )
     }
 ]
@@ -49,9 +47,11 @@ const TAB_DATA = [
 export const AboutSection = () => {
     const [tab, setTab] = useState<string>('');
     const [isPending, startTransition] = useTransition();
+    const [animationKey, setAnimationKey] = useState<number>(0);
     const handleTabChange = (id: string) => {
         startTransition(() => {
             setTab(id);
+            setAnimationKey(prevKey => prevKey + 1);
         });
     };
 
@@ -85,7 +85,13 @@ export const AboutSection = () => {
                             Education
                         </TabButton >
                     </div>
-                    <div className='mb-5 md:mb-0 text-white'>{TAB_DATA.find((t) => t.id === tab)?.content}</div>
+                    <div className='mb-5 md:mb-0 text-white'>
+                        {TAB_DATA.find((t) => t.id === tab) && (
+                            <ul className='animate-slide-out' key={animationKey}>
+                                {TAB_DATA.find((t) => t.id === tab)?.content}
+                            </ul>
+                        )}
+                    </div>
                 </div>
                 <Image
                     className='m-auto w-fit lg:w-[40%] lg:m-0 lg:h-fit'
